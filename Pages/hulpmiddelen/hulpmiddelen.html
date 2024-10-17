@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>StressLess - Hulpmiddelen</title>
+    <link rel="stylesheet" href="../../Basic_Styling/basic.css" />
+    <link rel="stylesheet" href="./hulpmiddelen.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css"
+    />
+    <script src="./hulpmiddelen.js" defer></script>
+    <link rel="stylesheet" href="../../Basic_Styling/basic.css" />
+    <link rel="stylesheet" href="../../Elementen/header/header.css">
+    <link rel="stylesheet" href="../../Elementen/footer/footer.css">
+  </head>
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <section class="top-nav">
+    <div>
+      <img id="logo_kindertelefoon" src="../../Elementen/header/Image/logo.png"></img>
+    </div>
+    <input id="menu-toggle" type="checkbox" />
+    <label class='menu-button-container' for="menu-toggle">
+    <div class='menu-button'></div>
+  </label>
+    <ul class="menu">
+      <li>
+          <div class="lijn een"></div>
+          <a href="../homepagina/index.html"> Home </a>
+      </li>
+      <li>
+          <div class="lijn twee"></div>
+          <a href="../spel/spel.html"> Spel </a>
+      </li>
+      <li>
+          <div class="lijn drie"></div>
+          <a href="../cursus/cursus.html"> Cursus </a>
+      </li>
+      <li>
+          <div class="lijn vier"></div>
+          <a href="../hulpmiddelen/hulpmiddelen.html"> Hulpmiddelen </a>
+
+      </li>
+    </ul>
+  </section>
+
+  <body>
+    
+    <h1>Hulpmiddelen</h1>
+    <div id="break"></div>
+    <div class="name_hulp">
+      <h2>Social media posts</h2>
+      <div class="buttons">
+        <button class="prev" onclick="changeSlide(-1, 'social')">
+          <i class="fas fa-chevron-left"></i>
+        </button>
+        <button class="next" onclick="changeSlide(1, 'social')">
+          <i class="fas fa-chevron-right"></i>
+        </button>
+      </div>
+    </div>
+
+    <div class="box" id="social">
+      <div class="slideshow_container">
+        <img src="./images/instapost.png" alt="" srcset="" id="socialImage" />
+      </div>
+    </div>
+    <div id="break"></div>
+    <div class="name_hulp">
+      <h2>Verhalen</h2>
+      <div class="buttons">
+        <button class="prev" onclick="changeSlide(-1, 'verhalen')">
+          <i class="fas fa-chevron-left"></i>
+        </button>
+        <button class="next" onclick="changeSlide(1, 'verhalen')">
+          <i class="fas fa-chevron-right"></i>
+        </button>
+      </div>
+    </div>
+
+    <div class="box" id="verhalen">
+      <div class="slideshow_container">
+        <img src="./images/verhaal1.png" alt="" srcset="" id="verhalenImage" />
+      </div>
+    </div>
+    <div id="break"></div>
+    <div class="name_hulp">
+      <h2>Nieuws</h2>
+      <div class="buttons">
+        <button class="prev" onclick="changeSlide(-1, 'nieuws')">
+          <i class="fas fa-chevron-left"></i>
+        </button>
+        <button class="next" onclick="changeSlide(1, 'nieuws')">
+          <i class="fas fa-chevron-right"></i>
+        </button>
+      </div>
+    </div>
+
+    <div class="box" id="nieuws">
+      <div class="slideshow_container">
+        <img src="./images/nieuwspng.png" alt="" srcset="" id="nieuwsImage" />
+      </div>
+    </div>
+
+    <span id="break"></span>
+  </body>
+
+  <footer>
+    <div class="doodles">
+        <span class="placeholderimg"> <img src="../../Elementen/footer/images/yellow.png"> </span>
+        <span class="placeholderimg"> <img src="../../Elementen/footer/images/blue.png"> </span>
+        <span class="placeholderimg"> <img src="../../Elementen/footer/images/orange.png"> </span>
+    </div>
+    <div class="bottomfooter">
+        <div class="items" id="socials">
+            <span class="placeholder-socials"> <img src="../../Elementen/footer/images/tiktok.png"> </span>
+            <span class="placeholder-socials"> <img src="../../Elementen/footer/images/youtube.png"> </span>
+            <span class="placeholder-socials"> <img src="../../Elementen/footer/images/insta.png"> </span>
+        </div>
+
+        <div class="items" id="links">
+            <a> Home </a>
+            <a> Spel </a>
+            <a> Cursus </a>
+            <a> Hulpmiddelen </a>
+        </div>
+
+        <div class="copyright"> 
+            <p> © 2023 Stressless </p>
+        </div>
+    </div>
+</footer>
+</html>
