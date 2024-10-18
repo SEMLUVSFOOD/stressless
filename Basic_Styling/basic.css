@@ -2,3 +2,12 @@
   height: 5vh;
   display: block;
 }
+
+/* This will only apply on desktops (screen widths larger than 768px) */
+@media (min-width: 450px) {
+  html, body {
+      width: 450px; /* Mobile width you want to simulate */
+      margin: 0 auto;
+      overflow-x: hidden; /* Prevent horizontal scrolling */
+  }
+}
